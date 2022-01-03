@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 1s;
+
+}
+:root{
+    --navbarheight:60px;
+
+}
+#navbar{
+    display:flex; 
+    align-items:center;
+
+
+} 
+html{
+    scroll-behavior: smooth;
+}
+#Logo img{
+    height:100px;
+    width:100px;
+}
+
+#Logo{
+    margin : 10px 34px;
+}
+#navbar{
+    position: relative;
+    top:0;
+
+
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: .4;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+
+
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 339px;
+}
+
+#home::before{
+    content:"";
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    position:fixed;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: .9;
+    margin-top: 0px;
+}
+
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+/* Utility Classes */
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.h-secondary{
+    font-size: 1.4rem;
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.center{
+    text-align: center;
+}
+
+.btn{
+    padding: 6px 12px;
+    border: 2px solid white;
+    margin: 18px;
+    color: white;
+    background-color:brown;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#services{
+    display:flex;
+    margin:34px;
+
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    background-color: rgb(248, 237, 237);
+    border-radius: 10px;
+}
+
+#services .box img{
+
+    height: 130px;
+    margin:auto;
+    display:block;
+
+}
+.service-container h1{
+    margin-top:148px;
+}
+
+
+
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#client-section::before{
+    position:absolute;
+    content:"";
+    background: url('../logobg.jpg');
+    height:50%;
+    width:100%;
+    z-index: -1;
+    opacity:.4;
+
+}
+
+
+#clients img{
+    height: 124px;
+}
+
+.client-items{
+    padding:40px;
+}
+
+
+/* Contact Section  */
+
+#contact{
+    position: relative;
+    margin-top: 120px;
+
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    z-index: -1;
+    background: url('../contact1.jpg') no-repeat center center/cover;
+
+}
+
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+
+
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+}
+#contact-box form{
+    width:40%;
+
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
